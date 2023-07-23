@@ -1,1 +1,3 @@
+bandit # to leverage vscode bandit extension
 flask
+llama-cpp-python

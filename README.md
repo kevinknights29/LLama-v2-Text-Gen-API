@@ -2,6 +2,15 @@
 
 This project aims to develop an API backend using Flask to support Text Generation Inference with Llama v2 Models
 
+## Results
+
+API Call:
+
+`http://127.0.0.1:5000/generate-text/Name the planets in the solar system`
+
+API Response:
+![image](https://github.com/kevinknights29/LLama-v2-Text-Gen-API/assets/74464814/2dff71b2-e102-48d8-ab2e-884ec34109b3)
+
 ## Contributing
 
 ### Installing pre-commit

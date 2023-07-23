@@ -6,9 +6,6 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-# Set the path of the requirements.txt file
-REQUIREMENTS_FILE=$1
-
 # Installing prerequisites
 apt-get update && \
     apt-get install -y \
@@ -25,6 +22,13 @@ python3 -m venv .venv
 
 # Activate the virtual environment
 source .venv/bin/activate
+
+# Set the path of the requirements.txt file
+REQUIREMENTS_FILE=$1
+
+# Set llama.cpp environment variables
+export CMAKE_ARGS="-DLLAMA_BLAS=ON -DLLAMA_BLAS_VENDOR=OpenBLAS"
+export FORCE_CMAKE=1
 
 # Install the Python packages
 pip3 install -r $REQUIREMENTS_FILE
