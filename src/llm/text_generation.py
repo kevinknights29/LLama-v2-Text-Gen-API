@@ -7,7 +7,7 @@ from llama_cpp import Llama
 LLM = None
 
 
-def _find_model(model_dir="/otp/app/models", pattern="*.bin"):
+def _find_model(model_dir="/opt/app/models", pattern="*.bin"):
     model_path = Path(model_dir)
     model_file_path = list(model_path.glob(pattern))[0]
 
