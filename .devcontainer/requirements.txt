@@ -1,1 +1,2 @@
 flask
+llama-cpp-python
