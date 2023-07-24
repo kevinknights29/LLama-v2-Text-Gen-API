@@ -1,3 +1,5 @@
 bandit # to leverage vscode bandit extension
 flask
+flask-smorest
 llama-cpp-python
+python-dotenv
