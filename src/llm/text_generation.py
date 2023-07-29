@@ -35,3 +35,17 @@ def text_generation(prompt):
     }
 
     return LLM(_format_prompt(prompt), **generation_params)
+
+
+def text_generation_stream(prompt):
+    global LLM
+    if LLM is None:
+        LLM = Llama(_find_model())
+
+    generation_params = {
+        "max_tokens": 256,
+        "stop": ["Q:", "\n"],
+        "echo": True,
+    }
+
+    return LLM(_format_prompt(prompt), stream=True, **generation_params)
