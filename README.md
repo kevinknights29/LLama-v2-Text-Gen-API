@@ -4,12 +4,13 @@ This project aims to develop an API backend using Flask to support Text Generati
 
 ## Results
 
-API Call:
+### Swagger-UI
 
-`http://127.0.0.1:5000/generate-text/Name the planets in the solar system`
+![image](https://github.com/kevinknights29/LLama-v2-Text-Gen-API/assets/74464814/f17c4861-a1fe-4869-a598-4632ef62efa3)
 
-API Response:
-![image](https://github.com/kevinknights29/LLama-v2-Text-Gen-API/assets/74464814/2dff71b2-e102-48d8-ab2e-884ec34109b3)
+### API Call and Response
+
+![image](https://github.com/kevinknights29/LLama-v2-Text-Gen-API/assets/74464814/8cc15848-f317-4e61-8885-8329555dd184)
 
 ## Contributing
 
