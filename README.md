@@ -12,6 +12,10 @@ This project aims to develop an API backend using Flask to support Text Generati
 
 ![image](https://github.com/kevinknights29/LLama-v2-Text-Gen-API/assets/74464814/8cc15848-f317-4e61-8885-8329555dd184)
 
+### Streaming API
+
+![screen_recording](https://github.com/kevinknights29/LLama-v2-Text-Gen-API/assets/74464814/09e39a03-a00f-404f-a98c-3af417effaac)
+
 ## Contributing
 
 ### Installing pre-commit
