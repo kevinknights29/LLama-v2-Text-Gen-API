@@ -4,21 +4,22 @@ from flask.views import MethodView
 from flask_smorest import Blueprint
 
 from src.llm import text_generation
+from src.schema import schema
 
 
 blp = Blueprint(
     "Text Generation",
     __name__,
-    url_prefix="/inference",
+    url_prefix="/generate-text",
     description="Text Generation API",
 )
 
-blp.route("/generate-text/<string:prompt>")
 
-
+@blp.route("")
 class TextGeneration(MethodView):
-    @blp.response(200, "Success")
-    def get(self, prompt):
+    @blp.arguments(schema.PromptSchema)
+    @blp.response(201, schema=schema.TextGenerationSchema)
+    def post(self, prompt_data):
         """Generate text from a prompt"""
-        result = text_generation.text_generation(prompt)
-        return {"result": result}
+        result = text_generation.text_generation(prompt_data["prompt"])
+        return result
