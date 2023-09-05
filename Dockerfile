@@ -10,7 +10,9 @@ WORKDIR /opt/app
 RUN apt update && \
     apt install -y --no-install-recommends \
     wget \
-    git
+    git \
+    build-essential \
+    python3-launchpadlib
 
 # Download models
 RUN mkdir -p models && \
