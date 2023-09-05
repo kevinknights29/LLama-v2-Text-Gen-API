@@ -29,4 +29,4 @@ RUN python -m pip install --upgrade pip && \
 
 # Run Flask App
 EXPOSE 7860
-CMD [python, main.py]
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0"]
