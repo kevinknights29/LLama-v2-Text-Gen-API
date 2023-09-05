@@ -4,6 +4,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
+    ports:
+      - 7860:7860
     environment:
-      - PORT=7860
-      - FLASK_APP=main.py
+      FLASK_APP: main.py
