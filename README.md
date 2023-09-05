@@ -16,6 +16,24 @@ This project aims to develop an API backend using Flask to support Text Generati
 
 ![screen_recording](https://github.com/kevinknights29/LLama-v2-Text-Gen-API/assets/74464814/09e39a03-a00f-404f-a98c-3af417effaac)
 
+## Usage
+
+### Build APP Image
+
+```bash
+docker compose build
+```
+
+### Get everything up and running
+
+```bash
+docker compose down && docker compose up -d
+```
+
+### Have fun
+
+Visit: `http://localhost:7860/swagger/` to access the Swagger API Docs.
+
 ## Contributing
 
 ### Installing pre-commit
