@@ -29,4 +29,4 @@ RUN python -m pip install --upgrade pip && \
 
 # Run Flask App
 EXPOSE 7860
-CMD [ptyhon, main.py]
+CMD [python, main.py]
