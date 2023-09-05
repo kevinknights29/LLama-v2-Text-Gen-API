@@ -20,7 +20,9 @@ RUN mkdir -p models && \
     wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/resolve/main/llama-2-7b-chat.ggmlv3.q4_0.bin
 
 # Copy files
-COPY requirements.txt .
+COPY requirements.txt \
+    main.py \
+    ./
 COPY src src/
 
 # Install dependencies
